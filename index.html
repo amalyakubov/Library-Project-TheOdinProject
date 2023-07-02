@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Library</h1>
+        <p>Amal Yakubov</p>
+    </div>
+    <table id="book-table">
+        <caption>List of books</caption>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+                <th>Remove</th>
+            </tr>
+    </table>
+    <body>
+        <button id="add-book">Add a book</button>
+        <div id="form" class="invisible">
+            <form action="index.html" method="post">
+                <ul>
+                    <li>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="book_title">
+                    </li>
+                    <li>
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="book_author">
+                    </li>
+                    <li>
+                        <label for="pages">Pages:</label>
+                        <input type="number" id="pages" name="book_pages">
+                    </li>
+                    <p>Read:</p>
+                    <li id="radio-buttons">
+                        <label for="read">Yes:</label>
+                        <input type="radio" id="read" name="book_read" value="Read">
+                        <label for="notread">No:</label>
+                        <input type="radio" id="notread" name="book_read" value="Not read">
+                    </li>
+                    <div class="button-holder">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </ul>
+            </form>
+        </div>
+    </body>
+</body>
+</html>
